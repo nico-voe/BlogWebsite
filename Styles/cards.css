@@ -5,6 +5,7 @@ svg {
   border-radius: 1em 1em 0 0;
   vertical-align: top;
   flex-shrink: 0;
+  height: -webkit-fill-available;
 }
 
 .card {

@@ -80,7 +80,7 @@ footer {
 Mobile Layout
 ======================= */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 850px) {
   #container {
     margin: 0px;
     height: 700px;
