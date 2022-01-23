@@ -80,13 +80,13 @@ footer {
 Mobile Layout
 ======================= */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   #container {
     margin: 0px;
     height: 700px;
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
       "nav"

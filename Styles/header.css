@@ -5,6 +5,7 @@ header {
 h1 {
   color: white;
   padding-left: 1rem;
+  text-shadow: 1px 1px rgb(233, 86, 86);
 }
 
 .nav-container {
