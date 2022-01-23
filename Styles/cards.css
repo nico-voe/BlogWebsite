@@ -3,6 +3,8 @@ svg {
   max-width: 100%;
   height: 255px;
   border-radius: 1em 1em 0 0;
+  vertical-align: top;
+  flex-shrink: 0;
 }
 
 .card {
@@ -10,6 +12,14 @@ svg {
   flex-direction: column;
   border-radius: 1em;
   background: #ece9e6bd;
+  text-align: center;
+}
+
+.card__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .card__body {
@@ -17,9 +27,15 @@ svg {
   text-align: center;
 }
 
+figcaption {
+  text-align: center;
+  display: relative;
+}
+
 .card__body h4 {
   font-size: 1.5rem;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .readButton {
