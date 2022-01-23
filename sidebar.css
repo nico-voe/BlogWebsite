@@ -1,0 +1,44 @@
+aside {
+  background-image: linear-gradient(
+    0deg,
+    rgba(48, 2, 156, 0.651),
+    rgba(6, 0, 56, 0)
+  );
+  grid-area: side;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+}
+
+.recommendations {
+  margin-left: -40px;
+  color: #f2f2f2;
+  list-style: none;
+  text-decoration: none;
+  margin-top: -10px;
+}
+
+.recommendations a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.recomLinks:hover {
+  transform: scale(1.3);
+}
+#quote {
+  justify-self: center;
+}
+#news {
+  color: white;
+  padding: 3rem;
+}

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;600&display=swap");
+/* =====================
+Blog Post Cards
+======================= */
+
+@import url("cards.css");
+
+/* =======================
+Header & Navbar
+========================== */
+
+@import url("header.css");
+
+/* =====================
+Sidebar
+======================= */
+
+@import url("sidebar.css");
+
+/* 
+==========================
+This is the Grid Layout
+==========================*/
+
+#container {
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 20% 1fr 1fr 1fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "side main main main"
+    "side box1 box2 box3"
+    "ft ft ft ft";
+}
+
+/* =======================
+Background / Font
+=========================== */
+
+body {
+  background-image: url(Pictures/stars.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  font-family: "Encode Sans", sans-serif;
+}
+
+/* =====================
+Main Section
+======================= */
+main {
+  background-color: rgba(255, 255, 255, 0.5);
+  grid-area: main;
+  padding: 1rem;
+  /* overflow-y: scroll; */
+  border-radius: 1em;
+}
+
+.mainText {
+  width: auto;
+  height: auto;
+}
+
+/* =====================
+Footer
+======================= */
+
+footer {
+  background-color: #2b343c;
+  width: 100%;
+  grid-area: ft;
+  text-align: center;
+  color: #f2f2f2;
+  margin-bottom: 0;
+}
+
+/* =====================
+Mobile Layout
+======================= */
+
+@media screen and (max-width: 800px) {
+  #container {
+    margin: 0px;
+    height: 700px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "nav"
+      "main"
+      "box1"
+      "box2"
+      "box3"
+      "side"
+      "ft";
+  }
+  aside {
+    grid-area: side;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    text-align: center;
+  }
+
+  .card_header {
+    display: flex;
+  }
+
+  img,
+  svg {
+    max-width: 100%;
+    height: 255px;
+    border-radius: 1em;
+  }
+
+  .card__header {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+  }
+}
